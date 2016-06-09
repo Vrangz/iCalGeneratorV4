@@ -125,6 +125,10 @@ public class ParseUzSite {
 						}
 					}
 					else {
+						try {
+						date = date.substring(0,10);
+						}
+						catch(Exception e) {break;}
 						startHourArray.add(date + " " + startHour);
 						endHourArray.add(date + " " + endHour);
 						name.add(temp.child(3).text());
@@ -144,5 +148,11 @@ public class ParseUzSite {
 	}
 	public ArrayList<String> getName() {
 		return name;
+	}
+	static public void printEvents() {
+		for(int i = 0; i < startHourArray.size(); i++)
+			System.out.println(startHourArray.get(i) + " - " +
+							   endHourArray.get(i) + " " +
+							   name.get(i) + "\n");
 	}
 }
