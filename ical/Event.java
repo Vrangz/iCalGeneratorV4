@@ -3,7 +3,7 @@ package ical;
 /**
  * Opisuje jedno zdarzenie w kalendarzu.
  */
-class Event {
+public class Event {
 
 	/**
 	 * Tworzy puste wydarzenie.
@@ -13,6 +13,7 @@ class Event {
 
 	/**
 	 * Zwraca datę początkową.
+     * @return stała data
 	 */
     public String getDateDTS() {
         return "20160302T174116Z";
@@ -20,6 +21,7 @@ class Event {
 
 	/**
 	 * Zwraca unikalne ID wydarzenia.
+     * @return ID wydarzenia
 	 */
     public String getUID() {
         return "1@example.com";
@@ -27,6 +29,7 @@ class Event {
 
 	/**
 	 * Zwraca datę rozpoczęcia wydarzenia.
+     * @return data rozpoczęcia wydarzenia
 	 */
     public String getDate() {
         return "20160302T120000";
@@ -34,6 +37,7 @@ class Event {
 
 	/**
 	 * Zwraca datę zakończenia wydarzenia.
+     * @return data zakończenia wydarzenia
 	 */
     public String getDateEnd() {
         return "20160316T121500";
@@ -41,6 +45,7 @@ class Event {
 
 	/**
 	 * Zwraca nazwę wydarzenia.
+     * @return nazwa wydarzenia
 	 */
     public String getTitle() {
         return "eewe";
@@ -48,6 +53,7 @@ class Event {
 
 	/**
 	 * Zwraca opis wydarzenia.
+     * @return opis wydarzenia
 	 */
     public String getDescription() {
         return "weweew";
@@ -55,6 +61,7 @@ class Event {
 
 	/**
 	 * Zwraca czy jest ustawiony alarm na wydarzeniu.
+     * @return czy ustawiony alarm
 	 */
     public boolean hasAlarm() {
         return true;
@@ -62,6 +69,7 @@ class Event {
 
 	/**
 	 * Zwraca godzinę ustawionego alarmu.
+     * @return ustawiona godzina alarmu
 	 */
     public String getTrigger() {
         return "15M";
@@ -69,6 +77,7 @@ class Event {
 
 	/**
 	 * Ustawia początkową datę.
+     * @param value stała data
 	 */
     public void setDateDTS(String value) {
         System.out.println("BEGIN:VEVENT");
@@ -77,6 +86,7 @@ class Event {
 
 	/**
 	 * Ustawia unikalne ID wydarzenia.
+     * @param value ID wydarzenia
 	 */
     public void setUID(String value) {
         System.out.println("UID:" + value);
@@ -84,6 +94,7 @@ class Event {
 
 	/**
 	 * Ustawia datę rozpoczęcia wydarzenia.
+     * @param value data rozpoczęcia wydarzenia
 	 */
     public void setDate(String value) {
         System.out.println("DTSTART:" + value);
@@ -91,6 +102,7 @@ class Event {
 
 	/**
 	 * Ustawia datę zakończenia wydarzenia.
+     * @param value data zakończenia wydarzenia
 	 */
     public void setDateEnd(String value) {
         System.out.println("DTEND:" + value);
@@ -98,6 +110,7 @@ class Event {
 
 	/**
 	 * Ustawia nazwę wydarzenia.
+     * @param value nazwa wydarzenia
 	 */
     public void setTitle(String value) {
         System.out.println("SUMMARY:" + value);
@@ -105,6 +118,7 @@ class Event {
 
 	/**
 	 * Ustawia opis wydarzenia.
+     * @param value opis wydarzenia
 	 */
     public void setDescription(String value) {
         System.out.println("DESCRIPTION:" + value);
@@ -112,6 +126,7 @@ class Event {
 
 	/**
 	 * Ustawia alarm na wydarzeniu.
+     * @param value żądana godzina alarmu
 	 */
     public void setAlarm(String value) {
         System.out.println("TRIGGER:" + value);

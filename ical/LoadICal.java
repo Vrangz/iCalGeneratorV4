@@ -6,6 +6,9 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Opisuje akcję ładowania kalendarza z formatu iCal.
+ */
 public class LoadICal implements Operation {
 
     private LoadICal(Calendar c) {
@@ -119,6 +122,9 @@ public class LoadICal implements Operation {
             Logger.getLogger(LoadICal.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    /**
+     * Instancja operacji ładowania z foramtu iCal.
+     */
     public static LoadICal instance = new LoadICal(Main.calendar);
     private final Calendar calendar;
 }

@@ -7,7 +7,7 @@ class Main {
         loadICal.run();
     }
 
-    static Calendar calendar = new Calendar();
-    static Operation generateICal = GenerateICal.instance;
-    static Operation loadICal = LoadICal.instance;
+    private static Calendar calendar = new Calendar();
+    private static Operation generateICal = GenerateICal.instance;
+    private static Operation loadICal = LoadICal.instance;
 }

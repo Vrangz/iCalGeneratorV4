@@ -1,6 +1,12 @@
 package ical;
 
-interface Operation {
+/**
+ * Opisuje różne operacje kalendarza.
+ */
+public interface Operation {
 
+    /**
+     * Uruchamia daną akcję.
+     */
     void run();
 }

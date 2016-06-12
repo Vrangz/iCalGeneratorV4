@@ -6,7 +6,10 @@ import java.io.UnsupportedEncodingException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-class GenerateICal implements Operation {
+/**
+ * Opisuje akcję generowania kalendarza do formatu iCal.
+ */
+public class GenerateICal implements Operation {
 
     private GenerateICal(Calendar calendar) {
         this.calendar = calendar;
@@ -62,6 +65,9 @@ class GenerateICal implements Operation {
             Logger.getLogger(GenerateICal.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    /**
+     * Instancja operacji generowania do foramtu iCal.
+     */
     public static GenerateICal instance = new GenerateICal(Main.calendar);
     private final Calendar calendar;
 }
