@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>TestEvent.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">ical (2016-06-12 02:21:18)</a> &gt; <a href="../../index.html" class="el_group">iCalTests</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">ical</a> &gt; <span class="el_source">TestEvent.java</span></div><h1>TestEvent.java</h1><pre class="source lang-java linenums">package ical;
+
+import static org.junit.Assert.*;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import org.junit.Test;
+
+<span class="fc" id="L10">public class TestEvent {</span>
+
+
+
+	@Test
+	public void testGetDateDTS() {
+<span class="fc" id="L16">		Event eve = new Event();</span>
+<span class="fc" id="L17">		assertEquals(&quot;20160302T174116Z&quot;, eve.getDateDTS());</span>
+<span class="fc" id="L18">	}</span>
+
+	@Test
+	public void testGetUID() {
+<span class="fc" id="L22">		Event eve = new Event();</span>
+<span class="fc" id="L23">		assertEquals(&quot;1@example.com&quot;, eve.getUID());</span>
+<span class="fc" id="L24">	}</span>
+
+	@Test
+	public void testGetDate() {
+<span class="fc" id="L28">		Event eve = new Event();</span>
+<span class="fc" id="L29">		assertEquals(&quot;20160302T120000&quot;, eve.getDate());</span>
+<span class="fc" id="L30">	}</span>
+
+	@Test
+	public void testGetDateEnd() {
+<span class="fc" id="L34">		Event eve = new Event();</span>
+<span class="fc" id="L35">		assertEquals(&quot;20160316T121500&quot;, eve.getDateEnd());</span>
+<span class="fc" id="L36">	}</span>
+
+	@Test
+	public void testGetTitle() {
+<span class="fc" id="L40">		Event eve = new Event();</span>
+<span class="fc" id="L41">		assertEquals(&quot;eewe&quot;, eve.getTitle());</span>
+<span class="fc" id="L42">	}</span>
+
+	@Test
+	public void testGetDescription() {
+<span class="fc" id="L46">		Event eve = new Event();</span>
+<span class="fc" id="L47">		assertEquals(&quot;weweew&quot;, eve.getDescription());</span>
+<span class="fc" id="L48">	}</span>
+
+	@Test
+	public void testHasAlarm() {
+<span class="fc" id="L52">		Event eve = new Event();</span>
+<span class="fc" id="L53">		assertEquals(true, eve.hasAlarm());</span>
+<span class="fc" id="L54">	}</span>
+
+	@Test
+	public void testGetTrigger() {
+<span class="fc" id="L58">		Event eve = new Event();</span>
+<span class="fc" id="L59">		assertEquals(&quot;15M&quot;, eve.getTrigger());</span>
+<span class="fc" id="L60">	}</span>
+
+	@Test
+	public void testSetDateDTS() {
+<span class="fc" id="L64">		Event eve =new Event();</span>
+<span class="fc" id="L65">		 ByteArrayOutputStream outContent = new ByteArrayOutputStream();</span>
+<span class="fc" id="L66">	      System.setOut(new PrintStream(outContent));</span>
+<span class="fc" id="L67">	      eve.setDateDTS(&quot;a&quot;);</span>
+<span class="fc" id="L68">	      String separator = System.getProperty(&quot;line.separator&quot;);</span>
+<span class="fc" id="L69">	      assertEquals(&quot;BEGIN:VEVENT&quot;+separator+&quot;DTSTAMP:a&quot;+separator,outContent.toString());</span>
+<span class="fc" id="L70">	}</span>
+
+	@Test
+	public void testSetUID() {
+<span class="fc" id="L74">		Event eve =new Event();</span>
+<span class="fc" id="L75">		 ByteArrayOutputStream outContent = new ByteArrayOutputStream();</span>
+<span class="fc" id="L76">	      System.setOut(new PrintStream(outContent));</span>
+<span class="fc" id="L77">	      eve.setUID(&quot;a&quot;);</span>
+<span class="fc" id="L78">	      String separator = System.getProperty(&quot;line.separator&quot;);</span>
+<span class="fc" id="L79">	      assertEquals(&quot;UID:a&quot;+separator,outContent.toString());</span>
+<span class="fc" id="L80">	}</span>
+
+	@Test
+	public void testSetDate() {
+<span class="fc" id="L84">		Event eve =new Event();</span>
+<span class="fc" id="L85">		 ByteArrayOutputStream outContent = new ByteArrayOutputStream();</span>
+<span class="fc" id="L86">	      System.setOut(new PrintStream(outContent));</span>
+<span class="fc" id="L87">	      eve.setDate(&quot;a&quot;);</span>
+<span class="fc" id="L88">	      String separator = System.getProperty(&quot;line.separator&quot;);</span>
+<span class="fc" id="L89">	      assertEquals(&quot;DTSTART:a&quot;+separator,outContent.toString());</span>
+<span class="fc" id="L90">	}</span>
+
+	@Test
+	public void testSetDateEnd() {
+<span class="fc" id="L94">		Event eve =new Event();</span>
+<span class="fc" id="L95">		 ByteArrayOutputStream outContent = new ByteArrayOutputStream();</span>
+<span class="fc" id="L96">	      System.setOut(new PrintStream(outContent));</span>
+<span class="fc" id="L97">	      eve.setDateEnd(&quot;a&quot;);</span>
+<span class="fc" id="L98">	      String separator = System.getProperty(&quot;line.separator&quot;);</span>
+<span class="fc" id="L99">	      assertEquals(&quot;DTEND:a&quot;+separator,outContent.toString());</span>
+<span class="fc" id="L100">	}</span>
+
+	@Test
+	public void testSetTitle() {
+<span class="fc" id="L104">		Event eve =new Event();</span>
+<span class="fc" id="L105">		 ByteArrayOutputStream outContent = new ByteArrayOutputStream();</span>
+<span class="fc" id="L106">	      System.setOut(new PrintStream(outContent));</span>
+<span class="fc" id="L107">	      eve.setTitle(&quot;a&quot;);</span>
+<span class="fc" id="L108">	      String separator = System.getProperty(&quot;line.separator&quot;);</span>
+<span class="fc" id="L109">	      assertEquals(&quot;SUMMARY:a&quot;+separator,outContent.toString());</span>
+<span class="fc" id="L110">	}</span>
+
+	@Test
+	public void testSetDescription() {
+<span class="fc" id="L114">		Event eve =new Event();</span>
+<span class="fc" id="L115">		 ByteArrayOutputStream outContent = new ByteArrayOutputStream();</span>
+<span class="fc" id="L116">	      System.setOut(new PrintStream(outContent));</span>
+<span class="fc" id="L117">	      eve.setDescription(&quot;a&quot;);</span>
+<span class="fc" id="L118">	      String separator = System.getProperty(&quot;line.separator&quot;);</span>
+<span class="fc" id="L119">	      assertEquals(&quot;DESCRIPTION:a&quot;+separator,outContent.toString());</span>
+<span class="fc" id="L120">	}</span>
+
+	@Test
+	public void testSetAlarm() {
+<span class="fc" id="L124">		Event eve =new Event();</span>
+<span class="fc" id="L125">		 ByteArrayOutputStream outContent = new ByteArrayOutputStream();</span>
+<span class="fc" id="L126">	      System.setOut(new PrintStream(outContent));</span>
+<span class="fc" id="L127">	      eve.setAlarm(&quot;a&quot;);</span>
+<span class="fc" id="L128">	      String separator = System.getProperty(&quot;line.separator&quot;);</span>
+<span class="fc" id="L129">	      assertEquals(&quot;TRIGGER:a&quot;+separator+&quot;END:VEVENT&quot;+separator,outContent.toString());</span>
+<span class="fc" id="L130">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span>ical (2016-06-12 02:21:18)</div></body></html>

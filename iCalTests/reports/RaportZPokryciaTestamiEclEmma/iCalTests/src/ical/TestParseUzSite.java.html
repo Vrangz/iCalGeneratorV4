@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>TestParseUzSite.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">ical (2016-06-12 02:21:18)</a> &gt; <a href="../../index.html" class="el_group">iCalTests</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">ical</a> &gt; <span class="el_source">TestParseUzSite.java</span></div><h1>TestParseUzSite.java</h1><pre class="source lang-java linenums">package ical;
+
+import static org.junit.Assert.*;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+
+import org.junit.Test;
+
+<span class="fc" id="L11">public class TestParseUzSite {</span>
+
+	@Test
+	public void testParseUz1() throws IOException {
+<span class="fc" id="L15">		ParseUzSite plan = new ParseUzSite(&quot;http://plan.uz.zgora.pl/grupy_plan.php?pId_Obiekt=16664&quot;);</span>
+<span class="fc" id="L16">		plan.parseUz();</span>
+<span class="fc" id="L17">		assertTrue(plan.getStartHourArray().contains(&quot;13-06-2016 09:15&quot;));</span>
+<span class="fc" id="L18">	}</span>
+
+	@Test
+	public void testParseUz2() throws IOException {
+		try {
+<span class="nc" id="L23">			ParseUzSite plan = new ParseUzSite(&quot;http://www.google.pl&quot;);</span>
+<span class="nc" id="L24">			plan.parseUz();</span>
+<span class="nc" id="L25">			fail();</span>
+<span class="pc" id="L26">		} catch (IndexOutOfBoundsException e) {</span>
+<span class="fc" id="L27">			return;</span>
+		}
+<span class="nc" id="L29">		fail();</span>
+
+<span class="nc" id="L31">	}</span>
+
+	@Test
+	public void testGetStartHourArray() throws IOException {
+<span class="fc" id="L35">		ParseUzSite plan = new ParseUzSite(&quot;http://plan.uz.zgora.pl/grupy_plan.php?pId_Obiekt=16664&quot;);</span>
+<span class="fc" id="L36">		plan.parseUz();</span>
+<span class="fc" id="L37">		assertTrue(plan.getStartHourArray().contains(&quot;13-06-2016 09:15&quot;));</span>
+<span class="fc" id="L38">	}</span>
+
+	@Test
+	public void testGetEndHourArray() throws IOException {
+<span class="fc" id="L42">		ParseUzSite plan = new ParseUzSite(&quot;http://plan.uz.zgora.pl/grupy_plan.php?pId_Obiekt=16664&quot;);</span>
+<span class="fc" id="L43">		plan.parseUz();</span>
+<span class="fc" id="L44">		assertTrue(plan.getEndHourArray().contains(&quot;13-06-2016 10:45&quot;));</span>
+<span class="fc" id="L45">	}</span>
+
+	@Test
+	public void testGetName() throws IOException {
+<span class="fc" id="L49">		ParseUzSite plan = new ParseUzSite(&quot;http://plan.uz.zgora.pl/grupy_plan.php?pId_Obiekt=16664&quot;);</span>
+<span class="fc" id="L50">		plan.parseUz();</span>
+<span class="fc" id="L51">		assertTrue(plan.getName().contains(&quot;Architektura komputerów II&quot;));</span>
+<span class="fc" id="L52">	}</span>
+
+	@Test
+	public void testSetUrl() throws Exception {
+<span class="fc" id="L56">		ParseUzSite plan = new ParseUzSite(&quot;http://plan.uz.zgora.pl/grupy_plan.php?pId_Obiekt=16664&quot;);</span>
+<span class="fc" id="L57">		plan.setUrl(&quot;http://plan.uz.zgora.pl/grupy_plan.php?pId_Obiekt=16669&amp;pTyp=P&quot;);</span>
+<span class="fc" id="L58">		assertEquals(plan.url, &quot;http://plan.uz.zgora.pl/grupy_plan.php?pId_Obiekt=16669&amp;pTyp=P&quot;);</span>
+<span class="fc" id="L59">	}</span>
+
+	@Test
+	public void testPrintEvents() throws IOException {
+<span class="fc" id="L63">		ByteArrayOutputStream outContent = new ByteArrayOutputStream();</span>
+<span class="fc" id="L64">		System.setOut(new PrintStream(outContent));</span>
+<span class="fc" id="L65">		ParseUzSite plan = new ParseUzSite(&quot;http://plan.uz.zgora.pl/grupy_plan.php?pId_Obiekt=16664&quot;);</span>
+<span class="fc" id="L66">		plan.parseUz();</span>
+<span class="fc" id="L67">		plan.printEvents();</span>
+<span class="fc" id="L68">		assertTrue(outContent.toString().contains(&quot;29-02-2016 09:15 - 29-02-2016 10:45 Architektura komputerów II&quot;));</span>
+<span class="fc" id="L69">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span>ical (2016-06-12 02:21:18)</div></body></html>

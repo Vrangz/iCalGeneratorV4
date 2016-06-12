@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../.resources/report.gif" type="image/gif"/><title>GenerateICal.java</title><link rel="stylesheet" href="../../../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../.sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">ical (2016-06-12 02:21:18)</a> &gt; <a href="../../index.html" class="el_group">iCalTests</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">ical</a> &gt; <span class="el_source">GenerateICal.java</span></div><h1>GenerateICal.java</h1><pre class="source lang-java linenums">package ical;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+class GenerateICal implements Operation {
+
+<span class="fc" id="L11">    private GenerateICal(Calendar calendar) {</span>
+<span class="fc" id="L12">        this.calendar = calendar;</span>
+<span class="fc" id="L13">    }</span>
+
+    @Override
+    public void run() {
+<span class="fc" id="L17">        try (PrintWriter writer = new PrintWriter(&quot;iCalendar.ical&quot;, &quot;UTF-8&quot;)) {</span>
+<span class="fc" id="L18">            writer.println(&quot;BEGIN:VCALENDAR&quot;);</span>
+<span class="fc" id="L19">            writer.println(&quot;VERSION:1.0&quot;);</span>
+<span class="fc" id="L20">            writer.println(&quot;PRODID:-//www.dupeczki.pl//iCal Calendar Generator&quot;);</span>
+<span class="fc" id="L21">            writer.println(&quot;X-WR-CALNAME:&quot; + calendar.getName());</span>
+<span class="fc" id="L22">            writer.println(&quot;CALSCALE:GREGORIAN&quot;);</span>
+<span class="fc" id="L23">            writer.println(&quot;BEGIN:VTIMEZONE&quot;);</span>
+<span class="fc" id="L24">            writer.println(&quot;TZID:&quot; + calendar.getTimeZone());</span>
+<span class="fc" id="L25">            writer.println(&quot;TZURL:http://tzurl.org/zoneinfo-outlook/&quot; + calendar.getTimeZone());</span>
+<span class="fc" id="L26">            writer.println(&quot;X-LIC-LOCATION:&quot; + calendar.getTimeZone());</span>
+<span class="fc" id="L27">            writer.println(&quot;BEGIN:DAYLIGHT&quot;);</span>
+<span class="fc" id="L28">            writer.println(&quot;TZOFFSETFROM:&quot; + calendar.getDaylightFrom());</span>
+<span class="fc" id="L29">            writer.println(&quot;TZOFFSETTO:&quot; + calendar.getDaylightTo());</span>
+<span class="fc" id="L30">            writer.println(&quot;TZNAME:&quot; + calendar.getDaylightName());</span>
+<span class="fc" id="L31">            writer.println(&quot;DTSTART:19700329T020000&quot;);</span>
+<span class="fc" id="L32">            writer.println(&quot;RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU&quot;);</span>
+<span class="fc" id="L33">            writer.println(&quot;END:DAYLIGHT&quot;);</span>
+<span class="fc" id="L34">            writer.println(&quot;BEGIN:STANDARD&quot;);</span>
+<span class="fc" id="L35">            writer.println(&quot;TZOFFSETFROM:&quot; + calendar.getStandardFrom());</span>
+<span class="fc" id="L36">            writer.println(&quot;TZOFFSETTO:&quot; + calendar.getStandardTo());</span>
+<span class="fc" id="L37">            writer.println(&quot;TZNAME:&quot; + calendar.getStandardName());</span>
+<span class="fc" id="L38">            writer.println(&quot;DTSTART:19701025T030000&quot;);</span>
+<span class="fc" id="L39">            writer.println(&quot;RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU&quot;);</span>
+<span class="fc" id="L40">            writer.println(&quot;END:STANDARD&quot;);</span>
+<span class="fc" id="L41">            writer.println(&quot;END:VTIMEZONE&quot;);</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">            for (Event e : calendar.getEvents()) {</span>
+<span class="fc" id="L43">                writer.println(&quot;BEGIN:VEVENT&quot;);</span>
+<span class="fc" id="L44">                writer.println(&quot;DTSTAMP:&quot; + e.getDateDTS());</span>
+<span class="fc" id="L45">                writer.println(&quot;UID:&quot; + e.getUID());</span>
+<span class="fc" id="L46">                writer.println(&quot;DTSTART;TZID=&amp;quot;&quot; + calendar.getTimeZone() + &quot;&amp;quot;:&quot; + e.getDate());</span>
+<span class="fc" id="L47">                writer.println(&quot;DTEND;TZID=&amp;quot;&quot; + calendar.getTimeZone() + &quot;&amp;quot;:&quot; + e.getDateEnd());</span>
+<span class="fc" id="L48">                writer.println(&quot;SUMMARY:&quot; + e.getTitle());</span>
+<span class="fc" id="L49">                writer.println(&quot;DESCRIPTION:&quot; + e.getDescription());</span>
+<span class="pc bpc" id="L50" title="1 of 2 branches missed.">                if (e.hasAlarm()) {</span>
+<span class="fc" id="L51">                    writer.println(&quot;BEGIN:VALARM&quot;);</span>
+<span class="fc" id="L52">                    writer.println(&quot;ACTION:DISPLAY&quot;);</span>
+<span class="fc" id="L53">                    writer.println(&quot;DESCRIPTION:&quot; + e.getTitle());</span>
+<span class="fc" id="L54">                    writer.println(&quot;TRIGGER:-PT&quot; + e.getTrigger());</span>
+<span class="fc" id="L55">                    writer.println(&quot;END:VALARM&quot;);</span>
+                }
+<span class="fc" id="L57">                writer.println(&quot;END:VEVENT&quot;);</span>
+            }
+<span class="fc" id="L59">            writer.println(&quot;END:VCALENDAR&quot;);</span>
+<span class="fc" id="L60">            writer.close();</span>
+<span class="pc bpc" id="L61" title="7 of 8 branches missed.">        } catch (FileNotFoundException | UnsupportedEncodingException ex) {</span>
+<span class="nc" id="L62">            Logger.getLogger(GenerateICal.class.getName()).log(Level.SEVERE, null, ex);</span>
+        }
+<span class="fc" id="L64">    }</span>
+<span class="fc" id="L65">    public static GenerateICal instance = new GenerateICal(Main.calendar);</span>
+    private final Calendar calendar;
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span>ical (2016-06-12 02:21:18)</div></body></html>

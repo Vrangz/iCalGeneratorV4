@@ -1,0 +1,474 @@
+src/ical/Calendar.java:5:	headerCommentRequirement Required
+src/ical/Calendar.java:7:	publicMethodCommentRequirement Required
+src/ical/Calendar.java:12:	publicMethodCommentRequirement Required
+src/ical/Calendar.java:16:	publicMethodCommentRequirement Required
+src/ical/Calendar.java:20:	publicMethodCommentRequirement Required
+src/ical/Calendar.java:24:	publicMethodCommentRequirement Required
+src/ical/Calendar.java:28:	publicMethodCommentRequirement Required
+src/ical/Calendar.java:32:	publicMethodCommentRequirement Required
+src/ical/Calendar.java:36:	publicMethodCommentRequirement Required
+src/ical/Calendar.java:40:	publicMethodCommentRequirement Required
+src/ical/Calendar.java:44:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/ical/Calendar.java:44:	publicMethodCommentRequirement Required
+src/ical/Calendar.java:48:	Parameter 'value' is not assigned and could be declared final
+src/ical/Calendar.java:48:	Use explicit scoping instead of the default package private level
+src/ical/Calendar.java:49:	System.out.println is used
+src/ical/Calendar.java:52:	Parameter 'value' is not assigned and could be declared final
+src/ical/Calendar.java:52:	Use explicit scoping instead of the default package private level
+src/ical/Calendar.java:53:	System.out.println is used
+src/ical/Calendar.java:56:	Parameter 'value' is not assigned and could be declared final
+src/ical/Calendar.java:56:	Use explicit scoping instead of the default package private level
+src/ical/Calendar.java:57:	System.out.println is used
+src/ical/Calendar.java:58:	System.out.println is used
+src/ical/Calendar.java:61:	Parameter 'value' is not assigned and could be declared final
+src/ical/Calendar.java:61:	Use explicit scoping instead of the default package private level
+src/ical/Calendar.java:62:	System.out.println is used
+src/ical/Calendar.java:65:	Parameter 'value' is not assigned and could be declared final
+src/ical/Calendar.java:65:	Use explicit scoping instead of the default package private level
+src/ical/Calendar.java:66:	System.out.println is used
+src/ical/Calendar.java:67:	System.out.println is used
+src/ical/Calendar.java:70:	Parameter 'value' is not assigned and could be declared final
+src/ical/Calendar.java:70:	Use explicit scoping instead of the default package private level
+src/ical/Calendar.java:71:	System.out.println is used
+src/ical/Calendar.java:72:	System.out.println is used
+src/ical/Calendar.java:75:	Parameter 'value' is not assigned and could be declared final
+src/ical/Calendar.java:75:	Use explicit scoping instead of the default package private level
+src/ical/Calendar.java:76:	System.out.println is used
+src/ical/Calendar.java:79:	Parameter 'value' is not assigned and could be declared final
+src/ical/Calendar.java:79:	Use explicit scoping instead of the default package private level
+src/ical/Calendar.java:80:	System.out.println is used
+src/ical/Calendar.java:81:	System.out.println is used
+src/ical/Calendar.java:83:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/ical/Calendar.java:83:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/Calendar.java:83:	fieldCommentRequirement Required
+src/ical/Event.java:3:	headerCommentRequirement Required
+src/ical/Event.java:5:	Avoid unnecessary constructors - the compiler will generate these for you
+src/ical/Event.java:5:	Document empty constructor
+src/ical/Event.java:5:	publicMethodCommentRequirement Required
+src/ical/Event.java:8:	publicMethodCommentRequirement Required
+src/ical/Event.java:12:	publicMethodCommentRequirement Required
+src/ical/Event.java:16:	publicMethodCommentRequirement Required
+src/ical/Event.java:20:	publicMethodCommentRequirement Required
+src/ical/Event.java:24:	publicMethodCommentRequirement Required
+src/ical/Event.java:28:	publicMethodCommentRequirement Required
+src/ical/Event.java:32:	publicMethodCommentRequirement Required
+src/ical/Event.java:36:	publicMethodCommentRequirement Required
+src/ical/Event.java:40:	Parameter 'value' is not assigned and could be declared final
+src/ical/Event.java:40:	publicMethodCommentRequirement Required
+src/ical/Event.java:41:	System.out.println is used
+src/ical/Event.java:42:	System.out.println is used
+src/ical/Event.java:45:	Parameter 'value' is not assigned and could be declared final
+src/ical/Event.java:45:	publicMethodCommentRequirement Required
+src/ical/Event.java:46:	System.out.println is used
+src/ical/Event.java:49:	Parameter 'value' is not assigned and could be declared final
+src/ical/Event.java:49:	publicMethodCommentRequirement Required
+src/ical/Event.java:50:	System.out.println is used
+src/ical/Event.java:53:	Parameter 'value' is not assigned and could be declared final
+src/ical/Event.java:53:	publicMethodCommentRequirement Required
+src/ical/Event.java:54:	System.out.println is used
+src/ical/Event.java:57:	Parameter 'value' is not assigned and could be declared final
+src/ical/Event.java:57:	publicMethodCommentRequirement Required
+src/ical/Event.java:58:	System.out.println is used
+src/ical/Event.java:61:	Parameter 'value' is not assigned and could be declared final
+src/ical/Event.java:61:	publicMethodCommentRequirement Required
+src/ical/Event.java:62:	System.out.println is used
+src/ical/Event.java:65:	Parameter 'value' is not assigned and could be declared final
+src/ical/Event.java:65:	publicMethodCommentRequirement Required
+src/ical/Event.java:66:	System.out.println is used
+src/ical/Event.java:67:	System.out.println is used
+src/ical/GenerateICal.java:9:	A class which only has private constructors should be final
+src/ical/GenerateICal.java:9:	headerCommentRequirement Required
+src/ical/GenerateICal.java:11:	Parameter 'calendar' is not assigned and could be declared final
+src/ical/GenerateICal.java:16:	Found 'UR'-anomaly for variable 'e' (lines '16'-'44').
+src/ical/GenerateICal.java:16:	publicMethodCommentRequirement Required
+src/ical/GenerateICal.java:42:	Local variable 'e' could be declared final
+src/ical/GenerateICal.java:62:	Potential violation of Law of Demeter (method chain calls)
+src/ical/GenerateICal.java:62:	Potential violation of Law of Demeter (method chain calls)
+src/ical/GenerateICal.java:62:	Potential violation of Law of Demeter (method chain calls)
+src/ical/GenerateICal.java:65:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/GenerateICal.java:65:	fieldCommentRequirement Required
+src/ical/GenerateICal.java:66:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/GenerateICal.java:66:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ical/GenerateICal.java:66:	fieldCommentRequirement Required
+src/ical/LoadICal.java:9:	A class which only has private constructors should be final
+src/ical/LoadICal.java:9:	The class 'LoadICal' has a Cyclomatic Complexity of 16 (Highest = 30).
+src/ical/LoadICal.java:9:	The class 'LoadICal' has a Modified Cyclomatic Complexity of 8 (Highest = 13).
+src/ical/LoadICal.java:9:	The class 'LoadICal' has a Standard Cyclomatic Complexity of 16 (Highest = 30).
+src/ical/LoadICal.java:9:	headerCommentRequirement Required
+src/ical/LoadICal.java:11:	Avoid variables with short names like c
+src/ical/LoadICal.java:11:	Parameter 'c' is not assigned and could be declared final
+src/ical/LoadICal.java:16:	Avoid really long methods.
+src/ical/LoadICal.java:16:	The method 'run' has a Cyclomatic Complexity of 30.
+src/ical/LoadICal.java:16:	The method 'run' has a Modified Cyclomatic Complexity of 13.
+src/ical/LoadICal.java:16:	The method 'run' has a Standard Cyclomatic Complexity of 30.
+src/ical/LoadICal.java:16:	publicMethodCommentRequirement Required
+src/ical/LoadICal.java:18:	Local variable 'reader' could be declared final
+src/ical/LoadICal.java:20:	Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'param_val' is not final.
+src/ical/LoadICal.java:23:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:24:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:25:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:27:	Found 'DD'-anomaly for variable 'value' (lines '27'-'27').
+src/ical/LoadICal.java:27:	Found 'DD'-anomaly for variable 'value' (lines '27'-'78').
+src/ical/LoadICal.java:27:	Found 'DU'-anomaly for variable 'value' (lines '27'-'121').
+src/ical/LoadICal.java:28:	A high ratio of statements to labels in a switch statement.  Consider refactoring.
+src/ical/LoadICal.java:28:	Switch statements should have a default label
+src/ical/LoadICal.java:30:	A high ratio of statements to labels in a switch statement.  Consider refactoring.
+src/ical/LoadICal.java:30:	Switch statements should have a default label
+src/ical/LoadICal.java:36:	Position literals first in String comparisons
+src/ical/LoadICal.java:36:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:37:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:38:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:40:	Found 'DD'-anomaly for variable 'value' (lines '40'-'40').
+src/ical/LoadICal.java:40:	Found 'DU'-anomaly for variable 'value' (lines '40'-'121').
+src/ical/LoadICal.java:41:	Switch statements should have a default label
+src/ical/LoadICal.java:55:	Position literals first in String comparisons
+src/ical/LoadICal.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:59:	Found 'DD'-anomaly for variable 'value' (lines '59'-'59').
+src/ical/LoadICal.java:59:	Found 'DU'-anomaly for variable 'value' (lines '59'-'121').
+src/ical/LoadICal.java:60:	Switch statements should have a default label
+src/ical/LoadICal.java:74:	Position literals first in String comparisons
+src/ical/LoadICal.java:74:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/ical/LoadICal.java:78:	Found 'DD'-anomaly for variable 'value' (lines '78'-'78').
+src/ical/LoadICal.java:78:	Found 'DU'-anomaly for variable 'value' (lines '78'-'121').
+src/ical/LoadICal.java:79:	Avoid instantiating new objects inside loops
+src/ical/LoadICal.java:79:	Avoid variables with short names like e
+src/ical/LoadICal.java:79:	Found 'DD'-anomaly for variable 'e' (lines '79'-'79').
+src/ical/LoadICal.java:79:	Found 'DU'-anomaly for variable 'e' (lines '79'-'121').
+src/ical/LoadICal.java:79:	Local variable 'e' could be declared final
+src/ical/LoadICal.java:80:	Switch statements should have a default label
+src/ical/LoadICal.java:119:	Potential violation of Law of Demeter (method chain calls)
+src/ical/LoadICal.java:119:	Potential violation of Law of Demeter (method chain calls)
+src/ical/LoadICal.java:119:	Potential violation of Law of Demeter (method chain calls)
+src/ical/LoadICal.java:122:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/LoadICal.java:122:	fieldCommentRequirement Required
+src/ical/LoadICal.java:123:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/LoadICal.java:123:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ical/LoadICal.java:123:	fieldCommentRequirement Required
+src/ical/Main.java:3:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/ical/Main.java:3:	Avoid short class names like Main
+src/ical/Main.java:3:	headerCommentRequirement Required
+src/ical/Main.java:5:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/ical/Main.java:5:	Parameter 'args' is not assigned and could be declared final
+src/ical/Main.java:5:	publicMethodCommentRequirement Required
+src/ical/Main.java:10:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/Main.java:10:	Use explicit scoping instead of the default package private level
+src/ical/Main.java:10:	fieldCommentRequirement Required
+src/ical/Main.java:11:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/Main.java:11:	Use explicit scoping instead of the default package private level
+src/ical/Main.java:11:	fieldCommentRequirement Required
+src/ical/Main.java:12:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/Main.java:12:	Use explicit scoping instead of the default package private level
+src/ical/Main.java:12:	fieldCommentRequirement Required
+src/ical/Operation.java:3:	headerCommentRequirement Required
+src/ical/Operation.java:5:	publicMethodCommentRequirement Required
+src/ical/ParseUzSite.java:13:	The class 'ParseUzSite' has a Cyclomatic Complexity of 4 (Highest = 17).
+src/ical/ParseUzSite.java:13:	The class 'ParseUzSite' has a Modified Cyclomatic Complexity of 3 (Highest = 14).
+src/ical/ParseUzSite.java:13:	The class 'ParseUzSite' has a Standard Cyclomatic Complexity of 3 (Highest = 14).
+src/ical/ParseUzSite.java:13:	headerCommentRequirement Required
+src/ical/ParseUzSite.java:14:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/ical/ParseUzSite.java:14:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ical/ParseUzSite.java:14:	Use explicit scoping instead of the default package private level
+src/ical/ParseUzSite.java:14:	fieldCommentRequirement Required
+src/ical/ParseUzSite.java:15:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/ical/ParseUzSite.java:15:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ical/ParseUzSite.java:15:	Use explicit scoping instead of the default package private level
+src/ical/ParseUzSite.java:15:	fieldCommentRequirement Required
+src/ical/ParseUzSite.java:16:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/ical/ParseUzSite.java:16:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ical/ParseUzSite.java:16:	Use explicit scoping instead of the default package private level
+src/ical/ParseUzSite.java:16:	fieldCommentRequirement Required
+src/ical/ParseUzSite.java:17:	Avoid using redundant field initializer for 'url'
+src/ical/ParseUzSite.java:17:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/ical/ParseUzSite.java:17:	Use explicit scoping instead of the default package private level
+src/ical/ParseUzSite.java:17:	fieldCommentRequirement Required
+src/ical/ParseUzSite.java:19:	Parameter 'url' is not assigned and could be declared final
+src/ical/ParseUzSite.java:19:	publicMethodCommentRequirement Required
+src/ical/ParseUzSite.java:20:	Overridable method 'setUrl' called during object construction
+src/ical/ParseUzSite.java:21:	Overridable method 'parseUz' called during object construction
+src/ical/ParseUzSite.java:24:	The method 'parseUz' has a Cyclomatic Complexity of 17.
+src/ical/ParseUzSite.java:24:	The method 'parseUz' has a Modified Cyclomatic Complexity of 14.
+src/ical/ParseUzSite.java:24:	The method 'parseUz' has a Standard Cyclomatic Complexity of 14.
+src/ical/ParseUzSite.java:24:	publicMethodCommentRequirement Required
+src/ical/ParseUzSite.java:26:	Local variable 'uzPlan' could be declared final
+src/ical/ParseUzSite.java:26:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:27:	Local variable 'days' could be declared final
+src/ical/ParseUzSite.java:27:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:28:	Found 'DU'-anomaly for variable 'uzTerm' (lines '28'-'102').
+src/ical/ParseUzSite.java:28:	Local variable 'uzTerm' could be declared final
+src/ical/ParseUzSite.java:28:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:28:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:28:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:28:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:28:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:28:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:28:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:29:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:36:	Avoid variables with short names like k
+src/ical/ParseUzSite.java:37:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:38:	Found 'DD'-anomaly for variable 'k' (lines '38'-'38').
+src/ical/ParseUzSite.java:38:	Found 'DU'-anomaly for variable 'k' (lines '38'-'102').
+src/ical/ParseUzSite.java:39:	Found 'DD'-anomaly for variable 'temp' (lines '39'-'39').
+src/ical/ParseUzSite.java:39:	Found 'DD'-anomaly for variable 'temp' (lines '39'-'41').
+src/ical/ParseUzSite.java:39:	Found 'DU'-anomaly for variable 'temp' (lines '39'-'102').
+src/ical/ParseUzSite.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:41:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:43:	Found 'DU'-anomaly for variable 'startHour' (lines '43'-'102').
+src/ical/ParseUzSite.java:43:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:43:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:45:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/ical/ParseUzSite.java:48:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:48:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:49:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:49:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:50:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:50:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:53:	An empty statement (semicolon) not part of a loop
+src/ical/ParseUzSite.java:53:	An empty statement (semicolon) not part of a loop
+src/ical/ParseUzSite.java:53:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:53:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:53:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:53:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:54:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:54:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:54:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:54:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:56:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/ical/ParseUzSite.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:60:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:62:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/ical/ParseUzSite.java:62:	Avoid empty catch blocks
+src/ical/ParseUzSite.java:62:	Avoid empty catch blocks
+src/ical/ParseUzSite.java:65:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:65:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:72:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:72:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:73:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:73:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:78:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:82:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:82:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:82:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:82:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:83:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:83:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:85:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:85:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:85:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:87:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:87:	Potential violation of Law of Demeter (method chain calls)
+src/ical/ParseUzSite.java:87:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:89:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:91:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/ical/ParseUzSite.java:100:	Avoid printStackTrace(); use a logger call instead.
+src/ical/ParseUzSite.java:100:	Potential violation of Law of Demeter (object not created locally)
+src/ical/ParseUzSite.java:103:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/ical/ParseUzSite.java:103:	publicMethodCommentRequirement Required
+src/ical/ParseUzSite.java:106:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/ical/ParseUzSite.java:106:	publicMethodCommentRequirement Required
+src/ical/ParseUzSite.java:109:	Avoid using implementation types like 'ArrayList'; use the interface instead
+src/ical/ParseUzSite.java:109:	publicMethodCommentRequirement Required
+src/ical/ParseUzSite.java:112:	Parameter 'url' is not assigned and could be declared final
+src/ical/ParseUzSite.java:112:	publicMethodCommentRequirement Required
+src/ical/ParseUzSite.java:115:	publicMethodCommentRequirement Required
+src/ical/ParseUzSite.java:116:	Avoid using for statements without curly braces
+src/ical/ParseUzSite.java:117:	System.out.println is used
+src/ical/TestAll.java:10:	Each class should declare at least one constructor
+src/ical/TestAll.java:10:	headerCommentRequirement Required
+src/ical/TestCalendar.java:9:	No need to import a type that lives in the same package
+src/ical/TestCalendar.java:12:	Each class should declare at least one constructor
+src/ical/TestCalendar.java:12:	This class has too many methods, consider refactoring it.
+src/ical/TestCalendar.java:12:	headerCommentRequirement Required
+src/ical/TestCalendar.java:17:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:18:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:19:	Avoid variables with short names like s
+src/ical/TestCalendar.java:19:	Local variable 's' could be declared final
+src/ical/TestCalendar.java:24:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:25:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:26:	Avoid variables with short names like s
+src/ical/TestCalendar.java:26:	Local variable 's' could be declared final
+src/ical/TestCalendar.java:31:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:32:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:33:	Avoid variables with short names like s
+src/ical/TestCalendar.java:33:	Local variable 's' could be declared final
+src/ical/TestCalendar.java:38:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:39:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:40:	Avoid variables with short names like s
+src/ical/TestCalendar.java:40:	Local variable 's' could be declared final
+src/ical/TestCalendar.java:45:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:46:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:47:	Avoid variables with short names like s
+src/ical/TestCalendar.java:47:	Local variable 's' could be declared final
+src/ical/TestCalendar.java:52:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:53:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:54:	Avoid variables with short names like s
+src/ical/TestCalendar.java:54:	Local variable 's' could be declared final
+src/ical/TestCalendar.java:59:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:60:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:61:	Avoid variables with short names like s
+src/ical/TestCalendar.java:61:	Local variable 's' could be declared final
+src/ical/TestCalendar.java:66:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:67:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:68:	Avoid variables with short names like s
+src/ical/TestCalendar.java:68:	Local variable 's' could be declared final
+src/ical/TestCalendar.java:73:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:74:	Local variable 'even' could be declared final
+src/ical/TestCalendar.java:76:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:82:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:83:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:84:	Local variable 'outContent' could be declared final
+src/ical/TestCalendar.java:87:	Local variable 'separator' could be declared final
+src/ical/TestCalendar.java:87:	The String literal "line.separator" appears 8 times in this file; the first occurrence is on line 87
+src/ical/TestCalendar.java:93:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:94:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:95:	Local variable 'outContent' could be declared final
+src/ical/TestCalendar.java:98:	Local variable 'separator' could be declared final
+src/ical/TestCalendar.java:103:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:104:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:105:	Local variable 'outContent' could be declared final
+src/ical/TestCalendar.java:108:	Local variable 'separator' could be declared final
+src/ical/TestCalendar.java:113:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:114:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:115:	Local variable 'outContent' could be declared final
+src/ical/TestCalendar.java:118:	Local variable 'separator' could be declared final
+src/ical/TestCalendar.java:123:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:124:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:125:	Local variable 'outContent' could be declared final
+src/ical/TestCalendar.java:128:	Local variable 'separator' could be declared final
+src/ical/TestCalendar.java:133:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:134:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:135:	Local variable 'outContent' could be declared final
+src/ical/TestCalendar.java:138:	Local variable 'separator' could be declared final
+src/ical/TestCalendar.java:143:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:144:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:145:	Local variable 'outContent' could be declared final
+src/ical/TestCalendar.java:148:	Local variable 'separator' could be declared final
+src/ical/TestCalendar.java:153:	publicMethodCommentRequirement Required
+src/ical/TestCalendar.java:154:	Local variable 'cal' could be declared final
+src/ical/TestCalendar.java:155:	Local variable 'outContent' could be declared final
+src/ical/TestCalendar.java:158:	Local variable 'separator' could be declared final
+src/ical/TestEvent.java:10:	Each class should declare at least one constructor
+src/ical/TestEvent.java:10:	This class has too many methods, consider refactoring it.
+src/ical/TestEvent.java:10:	headerCommentRequirement Required
+src/ical/TestEvent.java:15:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:16:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:21:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:22:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:27:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:28:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:33:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:34:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:39:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:40:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:45:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:46:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:51:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:52:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:53:	Use assertTrue(x)/assertFalse(x) instead of assertEquals(true, x)/assertEquals(false, x).
+src/ical/TestEvent.java:57:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:58:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:63:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:64:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:65:	Local variable 'outContent' could be declared final
+src/ical/TestEvent.java:68:	Local variable 'separator' could be declared final
+src/ical/TestEvent.java:68:	The String literal "line.separator" appears 7 times in this file; the first occurrence is on line 68
+src/ical/TestEvent.java:73:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:74:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:75:	Local variable 'outContent' could be declared final
+src/ical/TestEvent.java:78:	Local variable 'separator' could be declared final
+src/ical/TestEvent.java:83:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:84:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:85:	Local variable 'outContent' could be declared final
+src/ical/TestEvent.java:88:	Local variable 'separator' could be declared final
+src/ical/TestEvent.java:93:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:94:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:95:	Local variable 'outContent' could be declared final
+src/ical/TestEvent.java:98:	Local variable 'separator' could be declared final
+src/ical/TestEvent.java:103:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:104:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:105:	Local variable 'outContent' could be declared final
+src/ical/TestEvent.java:108:	Local variable 'separator' could be declared final
+src/ical/TestEvent.java:113:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:114:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:115:	Local variable 'outContent' could be declared final
+src/ical/TestEvent.java:118:	Local variable 'separator' could be declared final
+src/ical/TestEvent.java:123:	publicMethodCommentRequirement Required
+src/ical/TestEvent.java:124:	Local variable 'eve' could be declared final
+src/ical/TestEvent.java:125:	Local variable 'outContent' could be declared final
+src/ical/TestEvent.java:128:	Local variable 'separator' could be declared final
+src/ical/TestGenerateICal.java:12:	Each class should declare at least one constructor
+src/ical/TestGenerateICal.java:12:	headerCommentRequirement Required
+src/ical/TestGenerateICal.java:15:	JUnit tests should not contain more than 1 assert(s).
+src/ical/TestGenerateICal.java:15:	publicMethodCommentRequirement Required
+src/ical/TestGenerateICal.java:17:	Local variable 'path' could be declared final
+src/ical/TestGenerateICal.java:18:	Local variable 'shouldExist' could be declared final
+src/ical/TestGenerateICal.java:21:	Avoid variables with short names like fr
+src/ical/TestGenerateICal.java:21:	Local variable 'fr' could be declared final
+src/ical/TestGenerateICal.java:22:	Local variable 'plik' could be declared final
+src/ical/TestGenerateICal.java:27:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/TestGenerateICal.java:27:	Use explicit scoping instead of the default package private level
+src/ical/TestGenerateICal.java:27:	fieldCommentRequirement Required
+src/ical/TestGenerateICal.java:28:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/TestGenerateICal.java:28:	Use explicit scoping instead of the default package private level
+src/ical/TestGenerateICal.java:28:	fieldCommentRequirement Required
+src/ical/TestLoadICal.java:10:	Each class should declare at least one constructor
+src/ical/TestLoadICal.java:10:	headerCommentRequirement Required
+src/ical/TestLoadICal.java:13:	JUnit tests should not contain more than 1 assert(s).
+src/ical/TestLoadICal.java:13:	publicMethodCommentRequirement Required
+src/ical/TestLoadICal.java:14:	Local variable 'baos' could be declared final
+src/ical/TestLoadICal.java:17:	Local variable 'output' could be declared final
+src/ical/TestLoadICal.java:23:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/TestLoadICal.java:23:	Use explicit scoping instead of the default package private level
+src/ical/TestLoadICal.java:23:	fieldCommentRequirement Required
+src/ical/TestLoadICal.java:24:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/ical/TestLoadICal.java:24:	Use explicit scoping instead of the default package private level
+src/ical/TestLoadICal.java:24:	fieldCommentRequirement Required
+src/ical/TestParseUzSite.java:11:	Each class should declare at least one constructor
+src/ical/TestParseUzSite.java:11:	headerCommentRequirement Required
+src/ical/TestParseUzSite.java:14:	publicMethodCommentRequirement Required
+src/ical/TestParseUzSite.java:15:	Local variable 'plan' could be declared final
+src/ical/TestParseUzSite.java:15:	The String literal "http://plan.uz.zgora.pl/grupy_plan.php?pId_Obiekt=16664" appears 6 times in this file; the first occurrence is on line 15
+src/ical/TestParseUzSite.java:17:	Potential violation of Law of Demeter (method chain calls)
+src/ical/TestParseUzSite.java:17:	Potential violation of Law of Demeter (method chain calls)
+src/ical/TestParseUzSite.java:21:	publicMethodCommentRequirement Required
+src/ical/TestParseUzSite.java:23:	Local variable 'plan' could be declared final
+src/ical/TestParseUzSite.java:34:	publicMethodCommentRequirement Required
+src/ical/TestParseUzSite.java:35:	Local variable 'plan' could be declared final
+src/ical/TestParseUzSite.java:37:	Potential violation of Law of Demeter (method chain calls)
+src/ical/TestParseUzSite.java:37:	Potential violation of Law of Demeter (method chain calls)
+src/ical/TestParseUzSite.java:41:	publicMethodCommentRequirement Required
+src/ical/TestParseUzSite.java:42:	Local variable 'plan' could be declared final
+src/ical/TestParseUzSite.java:44:	Potential violation of Law of Demeter (method chain calls)
+src/ical/TestParseUzSite.java:44:	Potential violation of Law of Demeter (method chain calls)
+src/ical/TestParseUzSite.java:48:	publicMethodCommentRequirement Required
+src/ical/TestParseUzSite.java:49:	Local variable 'plan' could be declared final
+src/ical/TestParseUzSite.java:51:	Potential violation of Law of Demeter (method chain calls)
+src/ical/TestParseUzSite.java:51:	Potential violation of Law of Demeter (method chain calls)
+src/ical/TestParseUzSite.java:55:	publicMethodCommentRequirement Required
+src/ical/TestParseUzSite.java:56:	Local variable 'plan' could be declared final
+src/ical/TestParseUzSite.java:62:	publicMethodCommentRequirement Required
+src/ical/TestParseUzSite.java:63:	Local variable 'outContent' could be declared final
+src/ical/TestParseUzSite.java:65:	Local variable 'plan' could be declared final
+src/ical/TestParseUzSite.java:68:	Potential violation of Law of Demeter (method chain calls)
+src/ical/TestParseUzSite.java:68:	Potential violation of Law of Demeter (method chain calls)
