@@ -58,7 +58,7 @@
 			CodeGeneration
 		</plugin>
 </profile>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sun Jun 12 17:48:28 CEST 2016'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Sun Jun 12 20:29:52 CEST 2016'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>0.34(6) revised on $Date: 2010-01-11 22:20:14 +0100 (Mon, 11 Jan 2010) $ </XMI.exporterVersion>
@@ -358,6 +358,126 @@
                 <UML:Class xmi.idref = '127-0-1-1--8976a97:155446841a0:-8000:0000000000000993'/>
               </UML:StructuralFeature.type>
             </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B0A'
+              name = '-name' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B0B'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B0C'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B0D'
+              name = '-timeZone' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B0E'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B0F'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B10'
+              name = '-daylightFrom' visibility = 'private' isSpecification = 'false'
+              ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B11'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B12'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B13'
+              name = '-daylightTo' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B14'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B15'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B16'
+              name = '-daylightName' visibility = 'private' isSpecification = 'false'
+              ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B17'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B18'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B19'
+              name = '-standardFrom' visibility = 'private' isSpecification = 'false'
+              ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B1A'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B1B'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B1C'
+              name = '-standartTo' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B1D'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B1E'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B1F'
+              name = '-standardName' visibility = 'private' isSpecification = 'false'
+              ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B20'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B21'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
           </UML:Classifier.feature>
         </UML:Class>
         <UML:Class xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:0000000000000993'
@@ -616,6 +736,126 @@
                   name = 'return' isSpecification = 'false' kind = 'return'/>
               </UML:BehavioralFeature.parameter>
             </UML:Operation>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B22'
+              name = '-dateDTS' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B23'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B24'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B25'
+              name = '-uID' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B26'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B27'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B28'
+              name = '-date' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B29'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B2A'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B2B'
+              name = '-dateEnd' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B2C'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B2D'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B2E'
+              name = '-title' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B2F'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B30'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B31'
+              name = '-description' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B32'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B33'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B34'
+              name = '-alarm' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B35'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B36'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:Class xmi.idref = '127-0-1-1--8976a97:155446841a0:-8000:00000000000009CA'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B37'
+              name = '-trigger' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
+              changeability = 'changeable' targetScope = 'instance'>
+              <UML:StructuralFeature.multiplicity>
+                <UML:Multiplicity xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B38'>
+                  <UML:Multiplicity.range>
+                    <UML:MultiplicityRange xmi.id = '127-0-1-1-5f09c54c:15545d7c38a:-8000:0000000000000B39'
+                      lower = '1' upper = '1'/>
+                  </UML:Multiplicity.range>
+                </UML:Multiplicity>
+              </UML:StructuralFeature.multiplicity>
+              <UML:StructuralFeature.type>
+                <UML:DataType href = 'http://argouml.org/profiles/uml14/default-uml14.xmi#-84-17--56-5-43645a83:11466542d86:-8000:000000000000087E'/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
           </UML:Classifier.feature>
         </UML:Class>
         <UML:Class xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:00000000000009CA'
@@ -629,9 +869,9 @@
           </UML:ModelElement.clientDependency>
           <UML:Classifier.feature>
             <UML:Operation xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:00000000000009F6'
-              name = '-GenerateICal' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-              isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
-              isAbstract = 'false'>
+              name = '-GenerateICal' visibility = 'private' isSpecification = 'false'
+              ownerScope = 'instance' isQuery = 'false' concurrency = 'sequential' isRoot = 'false'
+              isLeaf = 'false' isAbstract = 'false'>
               <UML:BehavioralFeature.parameter>
                 <UML:Parameter xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:00000000000009F7'
                   name = 'return' isSpecification = 'false' kind = 'return'/>
@@ -659,7 +899,7 @@
               </UML:StructuralFeature.type>
             </UML:Attribute>
             <UML:Attribute xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:00000000000009FC'
-              name = '-calendar' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              name = '-calendar' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
               changeability = 'changeable' targetScope = 'instance'>
               <UML:StructuralFeature.multiplicity>
                 <UML:Multiplicity xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:00000000000009FD'>
@@ -745,7 +985,7 @@
           isLeaf = 'false' isAbstract = 'false' isActive = 'false'>
           <UML:Classifier.feature>
             <UML:Attribute xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:0000000000000A02'
-              name = 'calendar' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              name = '-calendar' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
               changeability = 'changeable' targetScope = 'instance'>
               <UML:StructuralFeature.multiplicity>
                 <UML:Multiplicity xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:0000000000000A03'>
@@ -760,8 +1000,8 @@
               </UML:StructuralFeature.type>
             </UML:Attribute>
             <UML:Attribute xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:0000000000000A05'
-              name = 'generateICal' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
-              changeability = 'changeable' targetScope = 'instance'>
+              name = '-generateICal' visibility = 'private' isSpecification = 'false'
+              ownerScope = 'instance' changeability = 'changeable' targetScope = 'instance'>
               <UML:StructuralFeature.multiplicity>
                 <UML:Multiplicity xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:0000000000000A06'>
                   <UML:Multiplicity.range>
@@ -775,7 +1015,7 @@
               </UML:StructuralFeature.type>
             </UML:Attribute>
             <UML:Attribute xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:0000000000000A08'
-              name = 'loadICal' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              name = '-loadICal' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
               changeability = 'changeable' targetScope = 'instance'>
               <UML:StructuralFeature.multiplicity>
                 <UML:Multiplicity xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:0000000000000A09'>
@@ -790,7 +1030,7 @@
               </UML:StructuralFeature.type>
             </UML:Attribute>
             <UML:Operation xmi.id = '127-0-1-1--8976a97:155446841a0:-8000:0000000000000A0B'
-              name = 'main' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              name = '+main' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
               isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
               isAbstract = 'false'>
               <UML:BehavioralFeature.parameter>
@@ -959,7 +1199,7 @@
               </UML:StructuralFeature.type>
             </UML:Attribute>
             <UML:Attribute xmi.id = '127-0-1-1-68307e53:15544f8a226:-8000:0000000000000AF4'
-              name = '-calendar' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              name = '-calendar' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
               changeability = 'changeable' targetScope = 'instance'>
               <UML:StructuralFeature.multiplicity>
                 <UML:Multiplicity xmi.id = '127-0-1-1-68307e53:15544f8a226:-8000:0000000000000AF5'>
@@ -987,7 +1227,7 @@
               </UML:BehavioralFeature.parameter>
             </UML:Operation>
             <UML:Operation xmi.id = '127-0-1-1-68307e53:15544f8a226:-8000:0000000000000AF9'
-              name = '-LoadICal' visibility = 'public' isSpecification = 'false' ownerScope = 'instance'
+              name = '-LoadICal' visibility = 'private' isSpecification = 'false' ownerScope = 'instance'
               isQuery = 'false' concurrency = 'sequential' isRoot = 'false' isLeaf = 'false'
               isAbstract = 'false'>
               <UML:BehavioralFeature.parameter>
@@ -1137,7 +1377,7 @@
       name="Class Diagram"
 >
   <group name="Fig0"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[656, 168, 320, 392]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[656, 112, 312, 496]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="127-0-1-1--8976a97:155446841a0:-8000:000000000000097A"
        fill="1"
        fillcolor="white"
@@ -1149,9 +1389,9 @@
     
     <rectangle name="Fig0.0"
       x="656"
-      y="168"
-      width="320"
-      height="392"
+      y="112"
+      width="312"
+      height="496"
       fill="1"
       fillcolor="white"
       stroke="1"
@@ -1159,8 +1399,8 @@
     />
     <text name="Fig0.1"
       x="657"
-      y="169"
-      width="318"
+      y="113"
+      width="310"
       height="22"
       fill="0"
       fillcolor="white"
@@ -1174,7 +1414,7 @@
       justification="Center"
     >Calendar</text>
     <group name="Fig0.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[657, 169, 318, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[657, 217, 318, 0]"
          href="127-0-1-1--8976a97:155446841a0:-8000:000000000000097A"
          fill="0"
          fillcolor="white"
@@ -1187,7 +1427,7 @@
       
       <rectangle name="Fig0.2.0"
         x="657"
-        y="169"
+        y="217"
         width="318"
         height="0"
         fill="0"
@@ -1198,8 +1438,8 @@
     </group>
     <rectangle name="Fig0.3"
       x="656"
-      y="191"
-      width="320"
+      y="135"
+      width="312"
       height="1"
       fill="1"
       fillcolor="black"
@@ -1207,7 +1447,7 @@
       strokecolor="black"
     />
     <group name="Fig0.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[657, 192, 318, 55]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[657, 136, 310, 171]"
          href="127-0-1-1--8976a97:155446841a0:-8000:000000000000097A"
          fill="0"
          fillcolor="white"
@@ -1219,9 +1459,9 @@
       
       <rectangle name="Fig0.4.0"
         x="657"
-        y="192"
-        width="318"
-        height="55"
+        y="136"
+        width="310"
+        height="171"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -1229,9 +1469,9 @@
       />
       <text name="Fig0.4.1"
         x="657"
-        y="192"
-        width="318"
-        height="22"
+        y="136"
+        width="310"
+        height="16"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -1243,11 +1483,139 @@
         textsize="12"
         justification="Left"
       >-events : ArrayList&lt;Event&gt;</text>
+      <text name="Fig0.4.2"
+        x="657"
+        y="152"
+        width="310"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-name : String</text>
+      <text name="Fig0.4.3"
+        x="657"
+        y="168"
+        width="310"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-timeZone : String</text>
+      <text name="Fig0.4.4"
+        x="657"
+        y="184"
+        width="310"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-daylightFrom : String</text>
+      <text name="Fig0.4.5"
+        x="657"
+        y="200"
+        width="310"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-daylightTo : String</text>
+      <text name="Fig0.4.6"
+        x="657"
+        y="216"
+        width="310"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-daylightName : String</text>
+      <text name="Fig0.4.7"
+        x="657"
+        y="232"
+        width="310"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-standardFrom : String</text>
+      <text name="Fig0.4.8"
+        x="657"
+        y="248"
+        width="310"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-standartTo : String</text>
+      <text name="Fig0.4.9"
+        x="657"
+        y="264"
+        width="310"
+        height="22"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-standardName : String</text>
     </group>
     <rectangle name="Fig0.5"
       x="656"
-      y="247"
-      width="320"
+      y="307"
+      width="312"
       height="1"
       fill="1"
       fillcolor="black"
@@ -1255,7 +1623,7 @@
       strokecolor="black"
     />
     <group name="Fig0.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[657, 248, 318, 311]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[657, 308, 310, 299]"
          href="127-0-1-1--8976a97:155446841a0:-8000:000000000000097A"
          fill="0"
          fillcolor="white"
@@ -1267,9 +1635,9 @@
       
       <rectangle name="Fig0.6.0"
         x="657"
-        y="248"
-        width="318"
-        height="311"
+        y="308"
+        width="310"
+        height="299"
         fill="0"
         fillcolor="white"
         stroke="0"
@@ -1277,8 +1645,8 @@
       />
       <text name="Fig0.6.1"
         x="657"
-        y="248"
-        width="318"
+        y="308"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1293,8 +1661,8 @@
       >+Calendar()</text>
       <text name="Fig0.6.2"
         x="657"
-        y="264"
-        width="318"
+        y="324"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1309,8 +1677,8 @@
       >+getTimeZone() : String</text>
       <text name="Fig0.6.3"
         x="657"
-        y="280"
-        width="318"
+        y="340"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1325,8 +1693,8 @@
       >+getName() : String</text>
       <text name="Fig0.6.4"
         x="657"
-        y="296"
-        width="318"
+        y="356"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1341,8 +1709,8 @@
       >+getDaylightFrom() : String</text>
       <text name="Fig0.6.5"
         x="657"
-        y="312"
-        width="318"
+        y="372"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1357,8 +1725,8 @@
       >+getDaylightTo() : String</text>
       <text name="Fig0.6.6"
         x="657"
-        y="328"
-        width="318"
+        y="388"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1373,8 +1741,8 @@
       >+getStandardFrom() : String</text>
       <text name="Fig0.6.7"
         x="657"
-        y="344"
-        width="318"
+        y="404"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1389,8 +1757,8 @@
       >+getStandardTo() : String</text>
       <text name="Fig0.6.8"
         x="657"
-        y="360"
-        width="318"
+        y="420"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1405,8 +1773,8 @@
       >+getStandardName() : String</text>
       <text name="Fig0.6.9"
         x="657"
-        y="376"
-        width="318"
+        y="436"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1421,8 +1789,8 @@
       >+getEvents() : ArrayList&lt;Event&gt;</text>
       <text name="Fig0.6.10"
         x="657"
-        y="392"
-        width="318"
+        y="452"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1437,8 +1805,8 @@
       >+setName(value : String) : void</text>
       <text name="Fig0.6.11"
         x="657"
-        y="408"
-        width="318"
+        y="468"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1453,8 +1821,8 @@
       >+setTimeZone(value : String) : void</text>
       <text name="Fig0.6.12"
         x="657"
-        y="424"
-        width="318"
+        y="484"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1469,8 +1837,8 @@
       >+setDaylightFrom(value : String) : void</text>
       <text name="Fig0.6.13"
         x="657"
-        y="440"
-        width="318"
+        y="500"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1485,8 +1853,8 @@
       >+setDaylightTo(value : String) : void</text>
       <text name="Fig0.6.14"
         x="657"
-        y="456"
-        width="318"
+        y="516"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1501,8 +1869,8 @@
       >+setDaylightName(value : String) : void</text>
       <text name="Fig0.6.15"
         x="657"
-        y="472"
-        width="318"
+        y="532"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1517,8 +1885,8 @@
       >+setStandardFrom(value : String) : void</text>
       <text name="Fig0.6.16"
         x="657"
-        y="488"
-        width="318"
+        y="548"
+        width="310"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1533,8 +1901,8 @@
       >+setStandardTo(value : String) : void</text>
       <text name="Fig0.6.17"
         x="657"
-        y="504"
-        width="318"
+        y="564"
+        width="310"
         height="22"
         fill="0"
         fillcolor="white"
@@ -1550,7 +1918,7 @@
     </group>
   </group>
   <group name="Fig1"
-       description="org.argouml.uml.diagram.static_structure.ui.FigClass[256, 168, 312, 392]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
+       description="org.argouml.uml.diagram.static_structure.ui.FigClass[248, 112, 320, 496]pathVisible=false;stereotypeView=0;operationsVisible=true;attributesVisible=true;"
        href="127-0-1-1--8976a97:155446841a0:-8000:00000000000009B2"
        fill="1"
        fillcolor="white"
@@ -1561,19 +1929,19 @@
     </private>
     
     <rectangle name="Fig1.0"
-      x="256"
-      y="168"
-      width="312"
-      height="392"
+      x="248"
+      y="112"
+      width="320"
+      height="496"
       fill="1"
       fillcolor="white"
       stroke="1"
       strokecolor="black"
     />
     <text name="Fig1.1"
-      x="257"
-      y="169"
-      width="310"
+      x="249"
+      y="113"
+      width="318"
       height="22"
       fill="0"
       fillcolor="white"
@@ -1587,7 +1955,7 @@
       justification="Center"
     >Event</text>
     <group name="Fig1.2"
-         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[257, 169, 310, 0]"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[249, 217, 310, 0]"
          href="127-0-1-1--8976a97:155446841a0:-8000:00000000000009B2"
          fill="0"
          fillcolor="white"
@@ -1599,8 +1967,8 @@
       </private>
       
       <rectangle name="Fig1.2.0"
-        x="257"
-        y="169"
+        x="249"
+        y="217"
         width="310"
         height="0"
         fill="0"
@@ -1610,9 +1978,9 @@
       />
     </group>
     <rectangle name="Fig1.3"
-      x="256"
-      y="191"
-      width="312"
+      x="248"
+      y="135"
+      width="320"
       height="1"
       fill="1"
       fillcolor="black"
@@ -1620,7 +1988,7 @@
       strokecolor="black"
     />
     <group name="Fig1.4"
-         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[257, 192, 310, 61]"
+         description="org.argouml.uml.diagram.ui.FigAttributesCompartment[249, 136, 318, 171]"
          href="127-0-1-1--8976a97:155446841a0:-8000:00000000000009B2"
          fill="0"
          fillcolor="white"
@@ -1631,20 +1999,148 @@
       </private>
       
       <rectangle name="Fig1.4.0"
-        x="257"
-        y="192"
-        width="310"
-        height="61"
+        x="249"
+        y="136"
+        width="318"
+        height="171"
         fill="0"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
       />
+      <text name="Fig1.4.1"
+        x="249"
+        y="136"
+        width="318"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-dateDTS : String</text>
+      <text name="Fig1.4.2"
+        x="249"
+        y="152"
+        width="318"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-uID : String</text>
+      <text name="Fig1.4.3"
+        x="249"
+        y="168"
+        width="318"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-date : String</text>
+      <text name="Fig1.4.4"
+        x="249"
+        y="184"
+        width="318"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-dateEnd : String</text>
+      <text name="Fig1.4.5"
+        x="249"
+        y="200"
+        width="318"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-title : String</text>
+      <text name="Fig1.4.6"
+        x="249"
+        y="216"
+        width="318"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-description : String</text>
+      <text name="Fig1.4.7"
+        x="249"
+        y="232"
+        width="318"
+        height="16"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-alarm : boolean</text>
+      <text name="Fig1.4.8"
+        x="249"
+        y="248"
+        width="318"
+        height="22"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+        textcolor="black"
+        font="Dialog"
+        italic="false"
+        bold="false"
+        textsize="12"
+        justification="Left"
+      >-trigger : String</text>
     </group>
     <rectangle name="Fig1.5"
-      x="256"
-      y="253"
-      width="312"
+      x="248"
+      y="307"
+      width="320"
       height="1"
       fill="1"
       fillcolor="black"
@@ -1652,7 +2148,7 @@
       strokecolor="black"
     />
     <group name="Fig1.6"
-         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[257, 254, 310, 304]"
+         description="org.argouml.uml.diagram.ui.FigOperationsCompartment[249, 308, 318, 299]"
          href="127-0-1-1--8976a97:155446841a0:-8000:00000000000009B2"
          fill="0"
          fillcolor="white"
@@ -1663,19 +2159,19 @@
       </private>
       
       <rectangle name="Fig1.6.0"
-        x="257"
-        y="254"
-        width="310"
-        height="304"
+        x="249"
+        y="308"
+        width="318"
+        height="299"
         fill="0"
         fillcolor="white"
         stroke="0"
         strokecolor="black"
       />
       <text name="Fig1.6.1"
-        x="257"
-        y="254"
-        width="310"
+        x="249"
+        y="308"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1689,9 +2185,9 @@
         justification="Left"
       >+getDateDTS() : String</text>
       <text name="Fig1.6.2"
-        x="257"
-        y="270"
-        width="310"
+        x="249"
+        y="324"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1705,9 +2201,9 @@
         justification="Left"
       >+getUID() : String</text>
       <text name="Fig1.6.3"
-        x="257"
-        y="286"
-        width="310"
+        x="249"
+        y="340"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1721,9 +2217,9 @@
         justification="Left"
       >+getDate() : String</text>
       <text name="Fig1.6.4"
-        x="257"
-        y="302"
-        width="310"
+        x="249"
+        y="356"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1737,9 +2233,9 @@
         justification="Left"
       >+getDateEnd() : String</text>
       <text name="Fig1.6.5"
-        x="257"
-        y="318"
-        width="310"
+        x="249"
+        y="372"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1753,9 +2249,9 @@
         justification="Left"
       >+getTitle() : String</text>
       <text name="Fig1.6.6"
-        x="257"
-        y="334"
-        width="310"
+        x="249"
+        y="388"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1769,9 +2265,9 @@
         justification="Left"
       >+getDescription() : String</text>
       <text name="Fig1.6.7"
-        x="257"
-        y="350"
-        width="310"
+        x="249"
+        y="404"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1785,9 +2281,9 @@
         justification="Left"
       >+hasAlarm() : boolean</text>
       <text name="Fig1.6.8"
-        x="257"
-        y="366"
-        width="310"
+        x="249"
+        y="420"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1801,9 +2297,9 @@
         justification="Left"
       >+getTrigger() : String</text>
       <text name="Fig1.6.9"
-        x="257"
-        y="382"
-        width="310"
+        x="249"
+        y="436"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1817,9 +2313,9 @@
         justification="Left"
       >+setDateDTS(value : String) : void</text>
       <text name="Fig1.6.10"
-        x="257"
-        y="398"
-        width="310"
+        x="249"
+        y="452"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1833,9 +2329,9 @@
         justification="Left"
       >+setUID(value : String) : void</text>
       <text name="Fig1.6.11"
-        x="257"
-        y="414"
-        width="310"
+        x="249"
+        y="468"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1849,9 +2345,9 @@
         justification="Left"
       >+setDate(value : String) : void</text>
       <text name="Fig1.6.12"
-        x="257"
-        y="430"
-        width="310"
+        x="249"
+        y="484"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1865,9 +2361,9 @@
         justification="Left"
       >+setDateEnd(value : String) : void</text>
       <text name="Fig1.6.13"
-        x="257"
-        y="446"
-        width="310"
+        x="249"
+        y="500"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1881,9 +2377,9 @@
         justification="Left"
       >+setTitle(value : String) : void</text>
       <text name="Fig1.6.14"
-        x="257"
-        y="462"
-        width="310"
+        x="249"
+        y="516"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1897,9 +2393,9 @@
         justification="Left"
       >+setDescription(value : String) : void</text>
       <text name="Fig1.6.15"
-        x="257"
-        y="478"
-        width="310"
+        x="249"
+        y="532"
+        width="318"
         height="16"
         fill="0"
         fillcolor="white"
@@ -1913,9 +2409,9 @@
         justification="Left"
       >+setAlarm(value : String) : void</text>
       <text name="Fig1.6.16"
-        x="257"
-        y="494"
-        width="310"
+        x="249"
+        y="548"
+        width="318"
         height="22"
         fill="0"
         fillcolor="white"
@@ -2349,7 +2845,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >calendar : Calendar</text>
+      >-calendar : Calendar</text>
       <text name="Fig4.4.2"
         x="1393"
         y="328"
@@ -2365,7 +2861,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >generateICal : Operation</text>
+      >-generateICal : Operation</text>
       <text name="Fig4.4.3"
         x="1393"
         y="344"
@@ -2381,7 +2877,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >loadICal : Operation</text>
+      >-loadICal : Operation</text>
     </group>
     <rectangle name="Fig4.5"
       x="1392"
@@ -2429,7 +2925,7 @@
         bold="false"
         textsize="12"
         justification="Left"
-      >main() : void</text>
+      >+main() : void</text>
     </group>
   </group>
   <group name="Fig5"
@@ -2907,7 +3403,7 @@
     >
       <moveto x="1072"
               y="247" />
-      <lineto x="975"
+      <lineto x="967"
               y="247" />
     </path>
   </group>
@@ -2964,7 +3460,7 @@
     >
       <moveto x="1072"
               y="456" />
-      <lineto x="975"
+      <lineto x="967"
               y="456" />
     </path>
   </group>
