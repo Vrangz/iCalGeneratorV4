@@ -5,14 +5,13 @@ import java.util.ArrayList;
 /**
  * Opisuje kalendarz.
  */
-class Calendar {
+public class Calendar {
     
 	/**
-	 * Tworzy nowy kalendarz z pustymi wydarzeniami.
+	 * Tworzy nowy kalendarz bez wydarzeń.
 	 */
     public Calendar() {
         events = new ArrayList<>();
-        events.add(new Event()); // Dla testów
     }
 
 	/**
@@ -20,7 +19,7 @@ class Calendar {
      * @return nazwa kalendarza
 	 */
     public String getName() {
-        return "test";
+        return name;
     }
 
 	/**
@@ -28,7 +27,7 @@ class Calendar {
      * @return strefa czasowa kalendarza
 	 */
     public String getTimeZone() {
-        return "Europe/Berlin";
+        return timeZone;
     }
 
 	/**
@@ -36,7 +35,7 @@ class Calendar {
      * @return godzina rozpoczęcia czasu letniego
 	 */
     public String getDaylightFrom() {
-        return "+0100";
+        return daylightFrom;
     }
 
 	/**
@@ -44,7 +43,7 @@ class Calendar {
      * @return godzina zakończenia czasu letniego
 	 */
     public String getDaylightTo() {
-        return "+0200";
+        return daylightTo;
     }
 
 	/**
@@ -52,7 +51,7 @@ class Calendar {
      * @return strefa czasowa czasu letniego
 	 */
     public String getDaylightName() {
-        return "CEST";
+        return daylightName;
     }
 
 	/**
@@ -60,7 +59,7 @@ class Calendar {
      * @return godzina rozpoczęcia czasu zimowego
 	 */
     public String getStandardFrom() {
-        return "+0200";
+        return standardFrom;
     }
 
 	/**
@@ -68,7 +67,7 @@ class Calendar {
      * @return godzina zakończenia czasu zimowego
 	 */
     public String getStandardTo() {
-        return "+0100";
+        return standardTo;
     }
 
 	/**
@@ -76,7 +75,7 @@ class Calendar {
      * @return strefa czasowa czasu zimowego
 	 */
     public String getStandardName() {
-        return "CET";
+        return standardName;
     }
 
 	/**
@@ -87,72 +86,83 @@ class Calendar {
         return events;
     }
 
+    /**
+	 * Dodaje nowe wydarzenie do kalendarza.
+     * @param e wydarzenie
+	 */
+    public void addEvent(Event e) {
+        events.add(e);
+    }
 	/**
 	 * Ustawia nazwę kalendarza.
-     * @return nazwa kalendarza
+     * @param value nazwa kalendarza
 	 */
-    void setName(String value) {
-        System.out.println("X-WR-CALNAME:" + value);
+    public void setName(String value) {
+        name = value;
     }
 
 	/**
 	 * Ustawia strefę czasową kalendarza.
      * @param value strefa czasowa kalendrza
 	 */
-    void setTimeZone(String value) {
-        System.out.println("TZID:" + value);
+    public void setTimeZone(String value) {
+        timeZone = value;
     }
 
 	/**
 	 * Ustawia godzinę obowiązywania czasu letniego.
      * @param value godzina rozpoczęcia czasu letniego
 	 */
-    void setDaylightFrom(String value) {
-        System.out.println("BEGIN:DAYLIGHT");
-        System.out.println("TZOFFSETFROM:" + value);
+    public void setDaylightFrom(String value) {
+        daylightFrom = value;
     }
 
 	/**
 	 * Ustawia godzinę zakończenia czasu letniego.
      * @param value godzina zakończenia czasu letniego
 	 */
-    void setDaylightTo(String value) {
-        System.out.println("TZOFFSETTO:" + value);
+    public void setDaylightTo(String value) {
+        daylightTo = value;
     }
 
 	/**
 	 * Ustawia strefę czasową czasu letniego.
      * @param value strefa czasowa czasu zimowego
 	 */
-    void setDaylightName(String value) {
-        System.out.println("TZNAME:" + value);
-        System.out.println("END:DAYLIGHT");
+    public void setDaylightName(String value) {
+        daylightName = value;
     }
 
 	/**
 	 * Ustawia godzinę obowiązywania czasu standardowego.
      * @param value godzina rozpoczęcia czasu zimowego
 	 */
-    void setStandardFrom(String value) {
-        System.out.println("BEGIN:STANDARD");
-        System.out.println("TZOFFSETFROM:" + value);
+    public void setStandardFrom(String value) {
+        standardFrom = value;
     }
 
 	/**
 	 * Ustawia godzinę zakończenia czasu standardowego.
      * @param value godzina zakończenia czasu zimowego
 	 */
-    void setStandardTo(String value) {
-        System.out.println("TZOFFSETTO:" + value);
+    public void setStandardTo(String value) {
+        standardTo = value;
     }
 
 	/**
 	 * Ustawia strefę czasową czasu standardowego.
      * @param value strefa czasowa czasu zimowego
 	 */
-    void setStandardName(String value) {
-        System.out.println("TZNAME:" + value);
-        System.out.println("END:STANDARD");
+    public void setStandardName(String value) {
+        standardName = value;
     }
     private final ArrayList<Event> events;
+    private String name;
+    private String timeZone;
+    private String daylightFrom;
+    private String daylightTo;
+    private String daylightName;
+    private String standardFrom;
+    private String standardTo;
+    private String standardName;
 }

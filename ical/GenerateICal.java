@@ -20,7 +20,7 @@ public class GenerateICal implements Operation {
         try (PrintWriter writer = new PrintWriter("iCalendar.ical", "UTF-8")) {
             writer.println("BEGIN:VCALENDAR");
             writer.println("VERSION:1.0");
-            writer.println("PRODID:-//www.dupeczki.pl//iCal Calendar Generator");
+            writer.println("PRODID:-//www.mycalendar.pl//iCal Calendar Generator");
             writer.println("X-WR-CALNAME:" + calendar.getName());
             writer.println("CALSCALE:GREGORIAN");
             writer.println("BEGIN:VTIMEZONE");

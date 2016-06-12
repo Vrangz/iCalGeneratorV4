@@ -16,7 +16,7 @@ public class Event {
      * @return stała data
 	 */
     public String getDateDTS() {
-        return "20160302T174116Z";
+        return dateDTS;
     }
 
 	/**
@@ -24,7 +24,7 @@ public class Event {
      * @return ID wydarzenia
 	 */
     public String getUID() {
-        return "1@example.com";
+        return uID;
     }
 
 	/**
@@ -32,7 +32,7 @@ public class Event {
      * @return data rozpoczęcia wydarzenia
 	 */
     public String getDate() {
-        return "20160302T120000";
+        return date;
     }
 
 	/**
@@ -40,7 +40,7 @@ public class Event {
      * @return data zakończenia wydarzenia
 	 */
     public String getDateEnd() {
-        return "20160316T121500";
+        return dateEnd;
     }
 
 	/**
@@ -48,7 +48,7 @@ public class Event {
      * @return nazwa wydarzenia
 	 */
     public String getTitle() {
-        return "eewe";
+        return title;
     }
 
 	/**
@@ -56,7 +56,7 @@ public class Event {
      * @return opis wydarzenia
 	 */
     public String getDescription() {
-        return "weweew";
+        return description;
     }
 
 	/**
@@ -64,7 +64,7 @@ public class Event {
      * @return czy ustawiony alarm
 	 */
     public boolean hasAlarm() {
-        return true;
+        return alarm;
     }
 
 	/**
@@ -72,7 +72,7 @@ public class Event {
      * @return ustawiona godzina alarmu
 	 */
     public String getTrigger() {
-        return "15M";
+        return trigger;
     }
 
 	/**
@@ -80,8 +80,7 @@ public class Event {
      * @param value stała data
 	 */
     public void setDateDTS(String value) {
-        System.out.println("BEGIN:VEVENT");
-        System.out.println("DTSTAMP:" + value);
+        dateDTS = value;
     }
 
 	/**
@@ -89,7 +88,7 @@ public class Event {
      * @param value ID wydarzenia
 	 */
     public void setUID(String value) {
-        System.out.println("UID:" + value);
+        uID = value;
     }
 
 	/**
@@ -97,7 +96,7 @@ public class Event {
      * @param value data rozpoczęcia wydarzenia
 	 */
     public void setDate(String value) {
-        System.out.println("DTSTART:" + value);
+        date = value;
     }
 
 	/**
@@ -105,7 +104,7 @@ public class Event {
      * @param value data zakończenia wydarzenia
 	 */
     public void setDateEnd(String value) {
-        System.out.println("DTEND:" + value);
+        dateEnd = value;
     }
 
 	/**
@@ -113,7 +112,7 @@ public class Event {
      * @param value nazwa wydarzenia
 	 */
     public void setTitle(String value) {
-        System.out.println("SUMMARY:" + value);
+        title = value;
     }
 
 	/**
@@ -121,7 +120,7 @@ public class Event {
      * @param value opis wydarzenia
 	 */
     public void setDescription(String value) {
-        System.out.println("DESCRIPTION:" + value);
+        description = value;
     }
 
 	/**
@@ -129,7 +128,15 @@ public class Event {
      * @param value żądana godzina alarmu
 	 */
     public void setAlarm(String value) {
-        System.out.println("TRIGGER:" + value);
-        System.out.println("END:VEVENT");
+        alarm = true;
+        trigger = value;
     }
+    private String dateDTS;
+    private String uID;
+    private String date;
+    private String dateEnd;
+    private String title;
+    private String description;
+    private boolean alarm;
+    private String trigger;
 }
